@@ -1,0 +1,47 @@
+# yersinia v0.7.3 started in kobenhaur.local on Tue Jan 23 14:49:37 2018
+
+Network Interface en0
+
+ en0 iflinkname EN10MB
+ en0 iflinkdesc Ethernet
+ en0 MAC = c4b3.01b3.99e0
+Network Interface bridge0
+
+ bridge0 iflinkname EN10MB
+ bridge0 iflinkdesc Ethernet
+ bridge0 MAC = 9a00.0ac5.a120
+Network Interface p2p0
+Network Interface awdl0
+
+ awdl0 iflinkname EN10MB
+ awdl0 iflinkdesc Ethernet
+ awdl0 MAC = 7ead.2072.e840
+Network Interface utun0
+Network Interface en1
+
+ en1 iflinkname EN10MB
+ en1 iflinkdesc Ethernet
+ en1 MAC = 9a00.0ac5.a120
+Network Interface lo0
+Network Interface gif0
+Network Interface stf0
+
+ th_uptime thread = 123224064
+
+ ncurses_gui_th = 123760640
+ Notification: Warning: interface en0 selected as the default one
+ en0 libnet_handler D2501350
+
+ ncurses_gui_th_exit start...
+ ncurses_gui_th_exit finish...
+ g00dbye function called from -1712741440
+
+ ints_destroy started...
+ ints_destroy killing pcap_listener(122687488)...
+
+ thread_destroy -1712741440 destroying 122687488...
+ thread_destroy -1712741440 after PTHREAD_JOIN 122687488...
+ ints_destroy finished...
+ Showing MOTD..
+# yersinia finished on Tue Jan 23 14:49:45 2018
+
