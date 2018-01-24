@@ -145,6 +145,7 @@ int main(void)
 			mvprintw(++line,0,"|-> Copyright (C) 2018 Temple University");
 			mvprintw(++line,0,"|-> -------------------------------------------");
 			mvprintw(++line,0,"|-> quit,clear,help,setbold,unsetbold,createWindow,destroyWindow,printWindow,showMenu,sysExec,fOpen, fClose, fRead, fWrite");
+			mvprintw(++line,0,"|-> fInit,gored,goback,setunderline,unsetunderline");
 		} else if (streq(input,"")) {
 			continue;
 		} else if (streq(input,"setbold")) {
@@ -152,6 +153,18 @@ int main(void)
 			continue;
 		} else if (streq(input,"unsetbold")) {
 			attroff(A_BOLD);
+			continue;
+		} else if (streq(input,"setunderline")) {
+			attron(A_UNDERLINE);
+			continue;
+		} else if (streq(input,"unsetunderline")) {
+			attroff(A_UNDERLINE);
+			continue;
+		} else if (streq(input, "gored")) {
+			attron(COLOR_RED);
+			continue;
+		} else if (streq(input,"goback")) {
+			attroff(COLOR_RED);
 			continue;
 		} else if (input[0]=='#') {
 			continue;

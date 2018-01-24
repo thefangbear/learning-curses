@@ -20,7 +20,10 @@
 #include <ncurses.h>
 #include <math.h>
 #include <stdlib.h>
-
+int getrand(int rl, int rh)
+{
+	return rand()%(rl+1)+rh;
+}
 int main(void) {
 	srand(time(NULL));
 	initscr();
@@ -45,9 +48,15 @@ int main(void) {
 //		sleep(1);
 		if (halfdelay(10)=='q') {endwin();return 0;}
 	
-		x=rand() % (50);
-		y=rand() % 50;
+		x=getrand(30, 50);
+		y=getrand(30, 50);
 		char ch = addch('A' | A_BOLD | A_UNDERLINE | COLOR_RED);
+		mvaddch(x,y,ch);
+		x=getrand(40,60);
+		y=getrand(40,60);
+		mvaddch(x,y,ch);
+		x=getrand(50,70);
+		y=getrand(50,70);
 		mvaddch(x,y,ch);
 	}
 
